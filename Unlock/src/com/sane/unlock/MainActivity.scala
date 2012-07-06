@@ -8,6 +8,8 @@ import org.andengine.entity.scene.background.Background
 import org.andengine.entity.scene.Scene
 import org.andengine.ui.activity.SimpleBaseGameActivity
 import org.andengine.util.color.Color
+import org.andengine.extension.physics.box2d.PhysicsWorld
+import com.badlogic.gdx.math.Vector2
 
 class MainActivity extends SimpleBaseGameActivity
 {
@@ -28,7 +30,11 @@ class MainActivity extends SimpleBaseGameActivity
 	
 	def onCreateScene() : Scene = {
 	  val scene = new Scene()
-	  scene.setBackground(new Background(Color.RED))
+	  val world = new PhysicsWorld(new Vector2(0, 0), true);
+	  
+	  scene.setBackground(new Background(Color.YELLOW))
+	  
+	  scene.registerUpdateHandler(world);
 	  scene
 	}
     

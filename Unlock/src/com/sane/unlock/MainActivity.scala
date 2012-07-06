@@ -6,18 +6,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
 
-public class MainActivity extends Activity {
+class MainActivity extends Activity {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
+    override def onCreate(savedInstanceState:Bundle )= {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    
+    override def onCreateOptionsMenu(menu:Menu):Boolean ={
         getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
+        true;
     }
 
     

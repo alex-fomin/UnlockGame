@@ -1,17 +1,12 @@
 package com.sane.unlock;
 
-import android.os.Bundle
-import android.app.Activity
-import android.view.Menu
-import android.view.MenuItem
-import android.support.v4.app.NavUtils
-import org.andengine.ui.activity.SimpleBaseGameActivity
-import org.andengine.engine.options.EngineOptions
-import org.andengine.entity.scene.Scene
-import org.andengine.engine.options.ScreenOrientation
-import org.andengine.engine.options.resolutionpolicy.RatioResolutionPolicy
 import org.andengine.engine.camera.Camera
+import org.andengine.engine.options.resolutionpolicy.RatioResolutionPolicy
+import org.andengine.engine.options.EngineOptions
+import org.andengine.engine.options.ScreenOrientation
 import org.andengine.entity.scene.background.Background
+import org.andengine.entity.scene.Scene
+import org.andengine.ui.activity.SimpleBaseGameActivity
 import org.andengine.util.color.Color
 
 class MainActivity extends SimpleBaseGameActivity

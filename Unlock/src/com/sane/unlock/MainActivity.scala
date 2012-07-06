@@ -14,8 +14,11 @@ class MainActivity extends SimpleBaseGameActivity
 	val WIDTH = 800
 	val HEIGHT = 600
   
+	lazy val textures = new Textures(this)
+	
+	
 	def onCreateResources() = {
-	  
+	  textures
 	}
 	
 	def onCreateEngineOptions() : EngineOptions={
@@ -30,3 +33,4 @@ class MainActivity extends SimpleBaseGameActivity
 	}
     
 }
+
